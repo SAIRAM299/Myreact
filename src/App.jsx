@@ -55,7 +55,7 @@ import React from 'react';
 // import Axios from './Functioncomponent/axios';
 // import Bootstrap from './common/Bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Provider from './common/Provider';
+// import Provider from './common/Provider';
 import Countercomponent from './Redux/Countercomponent';
 // import Headcomponent from './common/Headcomponent';
 // import Countcomponent from './common/Countcomponent';
@@ -65,6 +65,8 @@ import Countercomponent from './Redux/Countercomponent';
 // import Pageone from './Router/pageone';
 // import Pagetwo from './Router/Pagetwo';
 // import Pagethree from './Router/Pagethree';
+import { Provider } from 'react-redux';
+import { Store } from './Redux/Reduxcom/Store';
 
 const App = () => {
   return (
@@ -99,9 +101,11 @@ const App = () => {
 <Route path='three' element={<Pagethree/>}/>
 </Routes>
  */}
-
-
+<Provider store={Store}>
 <Countercomponent/>
+</Provider>
+
+
 
 
 </>
