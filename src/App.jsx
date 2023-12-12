@@ -61,10 +61,10 @@ import Countercomponent from './Redux/Countercomponent';
 // import Countcomponent from './common/Countcomponent';
 // import Compprovider from './common/Compprovider';
 // import Fetchcomponent from './Customhook/Fetchcomponent';
-// import { Route,Routes,Link } from 'react-router-dom';
-// import Pageone from './Router/pageone';
-// import Pagetwo from './Router/Pagetwo';
-// import Pagethree from './Router/Pagethree';
+import { Route,Routes,Link } from 'react-router-dom';
+import Pageone from './Router/pageone';
+import Pagetwo from './Router/Pagetwo';
+import Pagethree from './Router/Pagethree';
 import { Provider } from 'react-redux';
 import { Store } from './Redux/Reduxcom/Store';
 
@@ -85,7 +85,7 @@ const App = () => {
 </Compprovider> */}
 {/* <Fetchcomponent/> */}
 
-{/* <div>
+<div>
       <Link to="one">Pageone</Link>
       <Link to="two">Pagetwo</Link>
       <Link to="three">Pagethree</Link>
@@ -100,12 +100,10 @@ const App = () => {
 <Route path='two' element={<Pagetwo/>}/>
 <Route path='three' element={<Pagethree/>}/>
 </Routes>
- */}
-<Provider store={Store}>
+
+{/* <Provider store={Store}>
 <Countercomponent/>
-</Provider>
-
-
+</Provider> */}
 
 
 </>
